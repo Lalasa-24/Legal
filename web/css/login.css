@@ -1,0 +1,96 @@
+/*login-css*/
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width: 601px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+}
+.loginbody{
+    background-image: url("1background-login.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+.loginh1{
+    color:#003974;
+    text-align: center;
+    margin-top:5%;
+    font-size:25px;
+}
+/*.header{
+    position: relative;
+    top:-30px;
+
+}*/
+.login--container {
+    background-image: linear-gradient(75deg, rgba(200,200,200,0.8), rgba(240,240,240,0.8), rgba(220,220,220,0.8));
+    height:auto;
+    width: 25%;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow:10px 10px 30px 15px rgb(113, 108, 108);
+    position: relative;
+    left:35%;
+}
+.loginh3 {
+    text-align: center;
+    color: #003974;
+    margin-bottom: 10px;
+}
+/*.input-group {
+    margin-bottom: 20px;
+    font-family:Georgia;
+    font-size: 2%;
+}*/
+.logininput-group input {
+    width: 92%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.logininput-group input:focus {
+    outline: none;
+    border-color: #003974;
+}
+.logininput-group button {
+    width: 50%;
+    padding: 1.5%;
+    font-size:large;
+    font-family:Georgia;
+    background-image: linear-gradient(75deg,rgba(250,171,83,0.7), rgba(0,57,116,1),rgba(250,171,83,0.7));
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20%
+}
+.logininput-group button :hover {
+    background-image:linear-gradient(75deg, rgba(237,28,16,0.8),rgba(237,28,16,0.7),rgba(237,28,16,0.8));
+}
+/*.loginbutton-text {
+    text-align: center;
+    margin-top: 10px;
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}.logo{
+    border-radius:100px;
+}
+
+
+
+ 

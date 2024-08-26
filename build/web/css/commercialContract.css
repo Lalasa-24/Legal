@@ -1,0 +1,238 @@
+/* General styles */
+body {
+/*    font-family: Arial, sans-serif;*/
+    background-image: url("gmr.png");
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h2 {
+    color: white;
+    background-image: url("heading_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 1%;
+    width: auto;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.heading {
+    background-image: linear-gradient(75deg, rgba(0,57,116,0.3), rgba(0,57,116,0.3),rgba(0,57,116,0.3),rgba(0,57,116,0.3));
+    position: relative;
+    top: -30px;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1%;
+    position: relative;
+    top: -7px;
+    margin: 0 0 10px 0;
+    overflow: auto;
+    font-size:small;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block; 
+}
+
+h3 {
+    color: rgb(0,57,116);
+}
+
+.contents {
+    display: block;
+    border: 1px solid;
+    background-image: linear-gradient(75deg, rgba(250,171,83,0.9), rgba(250,171,83,0.9));
+    padding: 6px;
+    font-size: larger;
+    border: none;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+.content {
+    color: white;
+}
+
+.page {
+    width: 65%;
+    background-image: linear-gradient(75deg, rgba(200,200,200,0.8), rgba(240,240,240,0.8), rgba(220,220,220,0.8));
+    padding: 1%;
+    border-radius: 10px;
+    margin-left: 17%;
+    margin-top:-2%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    
+    
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    padding-left:2.5%;
+/*    font-weight:bold;*/
+    font-size: medium;
+}
+
+
+.details .user-details {
+    flex: 1 1 30%;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+}
+/*flex: 1 1 30%;             Each item grows and shrinks, with a basis of 30%   
+    margin: 10px;             Add some margin around items for spacing   
+    box-sizing: border-box; */
+.details .user-details input,
+.details .user-details select
+{
+    width: 90%;
+    padding: 1%;
+/*    margin-top: 5px;*/
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.details .user-details textarea {
+       width: 40%;
+   
+    margin-top: -2%;
+    border: 1px solid black;
+    
+}
+.flex-container {  
+    display: flex;  
+    flex-wrap: wrap; /* Allow rows to wrap */  
+}  
+
+.user-details2 {  
+    display: flex;  
+    flex-direction: column; /* Stack the label, textarea, and message vertically */  
+    margin: 10px; /* Add some space between fields */  
+    flex: 1 0 45%; /* Allow two fields to be displayed per row */  
+}  
+
+.word-count-message {  
+    color: red;   
+    display: none;   
+}
+input[type="file"] {
+    padding: 1%;
+   background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.next {
+    background-image: linear-gradient(75deg,rgba(250,171,83,0.7), rgba(0,57,116,1),rgba(250,171,83,0.7));
+    border: none;
+    border-radius: 1%;
+    color: white;
+    padding: 1.2%;
+    font-size: 16px;
+    cursor: pointer;
+/*    margin: 5px 0;*/
+    width: 40%;
+    margin-left:50%;
+    margin-top: -6%;
+    height:0%;
+}
+ .previous {
+    background-image: linear-gradient(75deg,rgba(250,171,83,0.7), rgba(0,57,116,1),rgba(250,171,83,0.7));
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+/*    margin: 5px 0;*/
+    width: 40%;
+/*    margin-left:2.5%;*/
+/*    margin-top:-40%;*/
+    
+}
+ .submit {
+    background-image: linear-gradient(75deg,rgba(250,171,83,0.7), rgba(0,57,116,1),rgba(250,171,83,0.7));
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+/*    margin: 5px 0;*/
+    width: 40%;
+/*    height:0%;
+    margin-left:55%;
+    margin-top:-40%;*/
+    
+}
+.flex{
+    display:flex;
+    flex-wrap:row-wrap;
+    justify-content:center;
+    gap:2%;
+}
+
+
+.next:hover, .previous:hover, .submit:hover {
+    background-image:linear-gradient(75deg, rgba(237,28,16,0.8),rgba(237,28,16,0.7),rgba(237,28,16,0.8));
+}
+
+.input:required + span::after {
+    content: "*";
+    color: red;
+}
+
+.start {
+    margin-left: -100px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .page {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details .user-details {
+        flex: 1 1 100%;
+    }
+}
+
+ .form {  
+/*            max-height: 40%;  Set the maximum height   
+            overflow-y: auto;   Enable vertical scrolling   
+            border: 1px solid #ccc;  Optional: Add border   
+            padding: 10px;  Optional: Add some padding   */
+ }
